@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Environment=NODE_PORT=3000
 Type=simple
-User=kordys.jaroslaw
-ExecStart=/usr/bin/node /home/kordys.jaroslaw/postgres_api/index.js
+User=jaroslaw.julian
+ExecStart=/usr/bin/node /home/jaroslaw.julian/postgres_api/index.js
 Restart=on-failure
 StandardOutput=syslog
 StandardError=syslog
