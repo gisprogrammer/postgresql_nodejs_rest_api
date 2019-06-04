@@ -1,0 +1,16 @@
+[Unit]
+Description=Node.js, Express, and Postgres API
+After=network.target
+
+[Service]
+Environment=NODE_PORT=3000
+Type=simple
+User=kordys.jaroslaw
+ExecStart=/usr/bin/node /home/kordys.jaroslaw/postgres_api/index.js
+Restart=on-failure
+StandardOutput=syslog
+StandardError=syslog
+RestartSec=42s
+
+[Install]
+WantedBy=multi-user.target
