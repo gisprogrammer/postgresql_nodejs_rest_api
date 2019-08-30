@@ -5,5 +5,6 @@ add postgres_api.service file to /usr/lib/systemd/system/
 
 sudo systemctl reboot
 
-open port 3000
+##open port 3000
+
 firewall-cmd --zone=public --add-port=3000/tcp
